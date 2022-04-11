@@ -12,13 +12,13 @@ class Menu extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           UserAccountsDrawerHeader(
-            accountName: Text("Camila Campos"),
-            accountEmail: Text("camila@gmail.com"),
+            accountName: Text("Talita Melo"),
+            accountEmail: Text("talita@email.com"),
             decoration: BoxDecoration(color: Colors.orange[700]),
             currentAccountPicture: CircleAvatar(
               backgroundColor: Colors.white,
               child: Text(
-                "CC",
+                "TM",
                 style: TextStyle(fontSize: 40.0, color: Colors.black38),
               ),
             ),
@@ -32,10 +32,10 @@ class Menu extends StatelessWidget {
                   builder: (BuildContext context) => ReservaList()));
             },
           ),
-          ListTile(
-            title: Text("Meus dados"),
-            trailing: Icon(Icons.arrow_forward),
-          ),
+          //ListTile(
+            //title: Text("Meus dados"),
+            //trailing: Icon(Icons.arrow_forward),
+          //),
         ],
       ),
     );

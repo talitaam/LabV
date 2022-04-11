@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:frontend_mobile/models/cliente_model.dart';
+//import 'package:frontend_mobile/models/cliente_model.dart';
 import 'package:frontend_mobile/services/clients_service.dart';
 
 class ClienteProvider extends ChangeNotifier {

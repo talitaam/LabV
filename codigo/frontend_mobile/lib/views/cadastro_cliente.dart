@@ -21,7 +21,12 @@ class _SignupPageState extends State<SignupPage> {
 
   @override
   void initState() {
-    SystemChrome.setEnabledSystemUIOverlays([]);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
+    //SystemChrome.setEnabledSystemUIOverlays([]); //antigo
+    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+    //static Future<void> setEnabledSystemUIOverlays(List<SystemUiOverlay> overlays) async {
+      //await setEnabledSystemUIMode(SystemUiMode.manual, overlays: overlays);
+    //}
     super.initState();
   }
 

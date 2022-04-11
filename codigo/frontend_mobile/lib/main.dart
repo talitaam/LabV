@@ -68,7 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     if (clientesApi == null) {
-      clientesApi = List<ClienteModel>();
+      clientesApi = <ClienteModel>[];
+      //List<ClienteModel>.empty(growable: true)
+      //List<ClienteModel>()
     }
 
     return Scaffold(

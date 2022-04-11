@@ -30,6 +30,7 @@ class ClientService {
   }
 
   Future<int> authentication(String login, String senha) async {
+    //Future<int> authentication(String login, String senha) async {
     Map data = {'login': login, 'senha': senha};
     final Response response = await post(
       '$BASE_URL/autenticacao',
@@ -52,7 +53,8 @@ class ClientService {
       return int.parse("200");
     }
 
-    if (response.statusCode != 200 && response.statusCode != 201) {
+    //if (response.statusCode != 200 && response.statusCode != 201) {
+    else{
       print(response.statusCode);
       return 400;
     }

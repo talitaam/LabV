@@ -7,7 +7,7 @@ class MesaService {
   Future<List<MesaModel>> getMesas(String dataReserva, List idsTurnos) async {
     // TODO: trocar para mesa/disponiveis
     //http://localhost:5000/api/v1/mesa/disponiveis?dataReserva=2021-06-10&idsTurnos=1,2,3
-
+    
     var dataReservaFormatted = dataReserva.substring(0, 10);
     var idsTurnosFormatted = idsTurnos.join(',');
 

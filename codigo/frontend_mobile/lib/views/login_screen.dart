@@ -22,6 +22,7 @@ class _State extends State<LoginPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Reserve Aqui'),
+          backgroundColor: Colors.orange,
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
@@ -59,47 +60,61 @@ class _State extends State<LoginPage> {
                   ),
                 ),
                 Container(
-                    height: 50,
-                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                    child: RaisedButton(
-                      textColor: Colors.black,
-                      color: Colors.orange,
+                    height: 70,
+                    //padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    padding: EdgeInsets.all(10),
+                    child: ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.orange),
+                        foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                      ),
+                      //textColor: Colors.black,
+                      //color: Colors.orange,
                       child: Text('Login'),
-                      onPressed: () async {
-                        print(nameController.text);
-                        print(passwordController.text);
-
-                        final responseCode = await clienteProvider.realizaLogin(
-                            nameController.text, passwordController.text);
-                        print(responseCode);
-                        if (responseCode == 200 || responseCode == 201) {
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            content: Text("Login feito com sucesso!"),
-                          ));
-                          sleep(const Duration(seconds: 2));
-                          Provider.of<ReservaProvider>(context, listen: false)
-                              .fetchReservaList();
-                          Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Home()),
-                          );
-                        } else {
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            content: Text("Login incorreto"),
-                          ));
-                          nameController.clear();
-                          passwordController.clear();
-                        }
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Home()));
                       },
+//                      onPressed: () async {
+//                        print(nameController.text);
+//                        print(passwordController.text);
+
+//                        final responseCode = await clienteProvider.realizaLogin(
+//                            nameController.text, passwordController.text);
+//                        print(responseCode);
+//                        if (responseCode == 200 || responseCode == 201) {
+//                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+//                           content: Text("Login feito com sucesso!"),
+//                          ));
+//                          sleep(const Duration(seconds: 2));
+//                          Provider.of<ReservaProvider>(context, listen: false)
+//                              .fetchReservaList();
+//                          Navigator.of(context).push(
+//                            MaterialPageRoute(builder: (context) => Home()),
+//                          );
+//                        } else {
+//                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+//                            content: Text("Login incorreto"),
+//                          ));
+//                          nameController.clear();
+//                         passwordController.clear();
+//                        }
+//                      },
                     )),
                 Container(
+                    padding: EdgeInsets.all(10),
                     child: Row(
                   children: <Widget>[
-                    Text('Não tem uma conta? Crie aqui!'),
-                    FlatButton(
-                      textColor: Colors.black,
+                    Text('Não tem uma conta? Crie aqui!  '),
+                    TextButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.orange),
+                        foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                      ),
+                      //textColor: Colors.black,
                       child: Text(
                         'Cadastre-se',
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 15),
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
