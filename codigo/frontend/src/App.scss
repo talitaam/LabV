@@ -1,0 +1,29 @@
+@import "./shared/components/layout/menu/menu.scss";
+@import "./shared/components/layout/sidebar/sidebar.scss";
+@import "./shared/components/layout/layout.scss";
+@import "./shared/components/table/table.scss";
+@import "./shared/components/dialog/confirmationDialog.scss";
+
+$themeColor: #f48f51;
+
+.page-title {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: thin solid rgb(165, 165, 165);
+}
+
+.btn-theme {
+  background-color: $themeColor !important;
+  color: white !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.theme-icon {
+  color: $themeColor;
+  &:hover {
+    color: #ce6929;
+  }
+}

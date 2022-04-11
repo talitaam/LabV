@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "quantCadeiras": "4",
+        "nomeMesa": "Mesa Norte 01"
+    },
+    {
+        "id": 1,
+        "quantCadeiras": "2",
+        "nomeMesa": "Mesa Norte 02"
+    },
+    {
+        "id": 2,
+        "quantCadeiras": "6",
+        "nomeMesa": "Mesa Sul 01"
+    },
+    {
+        "id": 3,
+        "quantCadeiras": "4",
+        "nomeMesa": "Mesa Sul 02"
+    }
+]

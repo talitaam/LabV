@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "descricao": "Manhã",
+        "horarioInicio": "07:30",
+        "horarioFim": "12:00"
+    },
+    {
+        "id": 1,
+        "descricao": "Tarde",
+        "horarioInicio": "13:30",
+        "horarioFim": "17:00"
+    },
+    {
+        "id": 2,
+        "descricao": "Tarde",
+        "horarioInicio": "13:30",
+        "horarioFim": "19:00"
+    }
+]

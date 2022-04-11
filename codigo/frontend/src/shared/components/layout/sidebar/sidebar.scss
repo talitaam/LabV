@@ -1,0 +1,11 @@
+$themeColor: #f48f51;
+
+.sidebar {
+  background-color: $themeColor;
+  span {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    border: 2px solid rgb(234, 234, 234);
+  }
+}

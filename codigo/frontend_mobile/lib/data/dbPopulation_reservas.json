@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1",
+        "horarioChegadaEsperada": "11:59",
+        "dataReserva": "2022-01-14T17:02:11.692Z",
+        "cliente": {
+            "idCliente": 0,
+            "nome": "Lucas",
+            "login": "lucas.campos",
+            "senha": "1234",
+            "email": "lucas@gmail.com",
+            "celular": "99658741"
+        },
+        "avaliacao": 75,
+        "status": {
+            "id": 0,
+            "descricao": "ocupado"
+        },
+        "mesas": [
+            {
+                "id": 0,
+                "quantCadeiras": "5",
+                "nomeMesa": "Mesa Norte 01"
+            },
+            {
+                "id": 1,
+                "quantCadeiras": "2",
+                "nomeMesa": "Mesa Sul 01"
+            }
+        ],
+        "turnos": [
+            {
+                "id": 0,
+                "descricao": "Manhã",
+                "horarioInicio": "07:30",
+                "horarioFim": "12:00"
+            },
+            {
+                "id": 1,
+                "descricao": "Tarde",
+                "horarioInicio": "13:30",
+                "horarioFim": "17:00"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "horarioChegadaEsperada": "08:01",
+        "dataReserva": "2021-12-02T00:25:39.949Z",
+        "cliente": {
+            "idCliente": 0,
+            "nome": "Paula",
+            "login": "paula.campos",
+            "senha": "4785",
+            "email": "paula@gmail.com",
+            "celular": "77744552"
+        },
+        "avaliacao": 80,
+        "status": {
+            "id": 1,
+            "descricao": "livre"
+        },
+        "mesas": [
+            {
+                "id": 1,
+                "quantCadeiras": "3",
+                "nomeMesa": "Mesa Sul 01"
+            }
+        ],
+        "turnos": [
+            {
+                "id": 2,
+                "descricao": "Tarde",
+                "horarioInicio": "13:30",
+                "horarioFim": "19:00"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "horarioChegadaEsperada": "10:41",
+        "dataReserva": "2021-04-08T00:25:39.949Z",
+        "cliente": {
+            "idCliente": 0,
+            "nome": "Maria",
+            "login": "maria.campos",
+            "senha": "98746",
+            "email": "maria@gmail.com",
+            "celular": "77744552"
+        },
+        "avaliacao": 80,
+        "status": {
+            "id": 1,
+            "descricao": "livre"
+        },
+        "mesas": [
+            {
+                "id": 1,
+                "quantCadeiras": "3",
+                "nomeMesa": "Mesa Sul 01"
+            }
+        ],
+        "turnos": [
+            {
+                "id": 2,
+                "descricao": "Tarde",
+                "horarioInicio": "13:30",
+                "horarioFim": "19:00"
+            }
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+name: frontend_mobile
+description: A Flutter application for TIS 5
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.12.2
+  signalr_client: ^0.1.6 
+  date_format:
+  provider:
+  mask_text_input_formatter:
+  shared_preferences: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+
+flutter:
+  uses-material-design: true
