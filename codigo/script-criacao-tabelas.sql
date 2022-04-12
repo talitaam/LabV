@@ -198,7 +198,7 @@ INSERT INTO dias_funcionamento (id_dia, restaurante_id_restaurante, dia_descrica
 INSERT INTO dias_funcionamento (id_dia, restaurante_id_restaurante, dia_descricao, ativo) values (5, 1, 'Sexta-feira', 1);
 INSERT INTO dias_funcionamento (id_dia, restaurante_id_restaurante, dia_descricao, ativo) values (6, 1, 'Sábado', 1);
 
-INSERT INTO `reserveaqui`.`CLIENTE` (`id_cliente`, `login`, `senha`, `nome`, `email`, `celular`) VALUES ('1', 'gabriel.haddad', '123', 'Gabriel Haddad', 'gabriel@haddad.com', '31996019998');
+INSERT INTO `reserveaqui`.`CLIENTE` (`id_cliente`, `login`, `senha`, `nome`, `email`, `celular`) VALUES ('1', 'talita.melo', '123', 'Talita Melo', 'talita@email.com', '31999999998');
 
 INSERT INTO `reserveaqui`.`status` (`id_status`, `descricao`) VALUES ('1', 'Reservado');
 INSERT INTO `reserveaqui`.`status` (`id_status`, `descricao`) VALUES ('2', 'Em uso');
