@@ -1,8 +1,7 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:frontend_mobile/models/cliente_model.dart';
+//import 'package:frontend_mobile/models/cliente_model.dart';
 import 'package:frontend_mobile/provider/clients_provider.dart';
 import 'package:frontend_mobile/views/login_screen.dart';
 

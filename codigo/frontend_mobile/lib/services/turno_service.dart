@@ -3,7 +3,7 @@ import 'package:frontend_mobile/models/turno_model.dart';
 import 'package:frontend_mobile/shared/utils/variables.dart';
 import 'package:http/http.dart';
 
-class TurnoService {
+class TurnoService { //o mobile nao cadastra turno, somente consulta
   Future<List<TurnoModel>> getTurnos() async {
     Response res = await get('$BASE_URL/turno');
 

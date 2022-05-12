@@ -3,6 +3,7 @@ import 'dart:convert' show json, jsonDecode, jsonEncode;
 import 'package:frontend_mobile/models/cliente_model.dart';
 import 'package:frontend_mobile/shared/utils/variables.dart';
 import 'package:http/http.dart';
+//import 'package:sqflite/sqflite.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ClientService {

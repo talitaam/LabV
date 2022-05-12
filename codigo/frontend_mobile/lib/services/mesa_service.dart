@@ -3,7 +3,7 @@ import 'package:frontend_mobile/models/mesa_model.dart';
 import 'package:frontend_mobile/shared/utils/variables.dart';
 import 'package:http/http.dart';
 
-class MesaService {
+class MesaService { //mobile nao castrada mesa, somente consulta
   Future<List<MesaModel>> getMesas(String dataReserva, List idsTurnos) async {
     // TODO: trocar para mesa/disponiveis
     //http://localhost:5000/api/v1/mesa/disponiveis?dataReserva=2021-06-10&idsTurnos=1,2,3

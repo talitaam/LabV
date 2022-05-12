@@ -5,7 +5,7 @@ import 'package:frontend_mobile/provider/reservaProvider.dart';
 import 'package:frontend_mobile/provider/turnoProvider.dart';
 import 'package:frontend_mobile/routes/app_routes.dart';
 import 'package:frontend_mobile/views/login_screen.dart';
-
+import 'package:frontend_mobile/services/sqlite_service.dart';
 import 'package:frontend_mobile/views/reserva/reserva_form.dart';
 import 'package:frontend_mobile/views/reserva/reserva_form_mesas.dart';
 import 'package:provider/provider.dart';
@@ -61,9 +61,20 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage>{
   // final ClienteService clienteService = ClienteService();
   List<ClienteModel> clientesApi;
+
+  SqliteService _sqliteService;
+
+  @override
+  void initState() {
+    super.initState();
+    this._sqliteService= SqliteService();
+    this._sqliteService.initializeDB().whenComplete(() async {
+      setState(() {});
+    });
+  }  
 
   @override
   Widget build(BuildContext context) {
@@ -72,6 +83,8 @@ class _MyHomePageState extends State<MyHomePage> {
       //List<ClienteModel>.empty(growable: true)
       //List<ClienteModel>()
     }
+
+
 
     return Scaffold(
       body: LoginPage(),
